@@ -6,8 +6,8 @@ import EventCard from "../Components/EventCard.jsx";
 const Events = () => {
   return (
     <div className="font-roboto">
-      <div className="w-full min-h-fit bg-gray-200 pb-20">
-        <div className="pt-20 w-1/2 mx-auto mt-auto mb-auto ml-80">
+      <div className="w-[100%] min-h-fit bg-gray-200 pb-10">
+        <div className="pt-20 w-1/2 mx-auto mt-auto mb-auto ">
           <h1 className="text-5xl font-bold pb-10 leading-normal">
             A day with our wonderful children
           </h1>
@@ -19,7 +19,7 @@ const Events = () => {
           <span className="text-sm">April 13,2022 8:30 AM</span>
         </div>
       </div>
-      <div className="w-1/2 ml-80">
+      <div className="w-1/2 mx-auto">
         <h1 className="text-4xl font-bold pb-10 mt-16">About</h1>
         <p>
           Et morbi vitae lobortis nam odio. Faucibus vitae vel neque nullam in
@@ -55,16 +55,14 @@ const Events = () => {
           vitae. Scelerisque eget accumsan, non in. Posuere magna erat bibendum
           amet, nisi eu id.
         </p>
-      </div>
-      <div className="otherEventsContainer">
         <div className="flex">
           <div>
-            <h1 className="text-4xl font-bold pb-10 ml-80 w-50">
+            <h1 className="text-4xl font-bold pb-10">
               Other events
             </h1>
           </div>
           <div>
-            <hr className="w-96 mt-6 ml-6"/>
+            <hr className="w-80 mt-6 ml-6"/>
           </div>
         </div>
         <EventCard
