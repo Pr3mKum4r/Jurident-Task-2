@@ -1,31 +1,14 @@
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
 import './App.css'
-import './index.css'
-import About from './components/About'
-import Navbar from './components/Navbar'
-import { Routes, Route } from 'react-router-dom'
-import Footer from './components/Footer'
-import Contact from './components/Contact'
-import Events from './components/Events'
-import Projects from './components/Projects'
-import Media from './components/Media'
-import Donate from './components/Donate'
-import WhatWeDo from './components/WhatWeDo'
 
 function App() {
+  const [count, setCount] = useState(0)
 
   return (
     <>
-      <Navbar/>
-      <Routes>
-        <Route path='/about' exact element={<About/>}/>
-        <Route path='/contact' exact element={<Contact/>}/>
-        <Route path='/events' exact element={<Events/>}/>
-        <Route path='/projects' exact element={<Projects/>}/>
-        <Route path='/media' exact element={<Media/>}/>
-        <Route path='/donate' exact element={<Donate/>}/>
-        <Route path='/whatwedo' exact element={<WhatWeDo/>}/>
-      </Routes>
-      <Footer/>
+      
     </>
   )
 }
