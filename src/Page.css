@@ -1,0 +1,38 @@
+.whatwedo{
+    display: flex;
+    justify-content: space-between;
+    color:#22495F;
+    background-color: #E8EBF0;
+  }
+.container {
+    display: flex;
+    align-items: center; 
+    
+  }
+  .line {
+    width: 5%;
+    height: 2px; 
+    background-color: #22495F; 
+    margin-right: 20px; 
+    color:#22495F;
+  }
+  .sectiontwo{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }  
+  .para{
+    margin-top: 0%;
+    margin-left: 2%;
+  }
+
+.sectionthree{
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+  
+
+
