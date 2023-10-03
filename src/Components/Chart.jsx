@@ -1,62 +1,81 @@
-import chart from "../assets/chart.png";
-const Chart = () => {
+import child from "../assets/child.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCalendar, faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import EventCard from "../Components/EventCard.jsx";
+
+const Events = () => {
   return (
-    <div className="bg-black w-full h-fit text-white p-20 flex flex-wrap">
-      <div className="w-1/2 font-sans">
-        <h1 className="text-5xl">
-          How we spend your donations and where it goes
-        </h1>
-        <p className="text-white text-opacity-50 text-lg">
-          We understand that when you make a donation youu want to know exactly
-          where your money is going and we pledge to be transparent
-        </p>
-        <div className="flex flex-col items-center">
-          <div className="flex flex-wrap justify-start mt-4">
-            <div className="flex flex-row items-center">
-              <div
-                className="w-5 h-5 mr-2 rounded-md"
-                style={{ backgroundColor: "#BEF3C0" }}
-              ></div>
-              <div className="text-center">40% child care home</div>
-            </div>
-            <div className="flex flex-row items-center ">
-              <div
-                className="w-5 h-5 m-3 rounded-md "
-                style={{ backgroundColor: "#AC94F1" }}
-              ></div>
-              <div className="text-center">35% cleanliness program</div>
-            </div>
-            <div className="flex flex-row items-center">
-              <div
-                className="w-5 h-5 m-3 rounded-md "
-                style={{ backgroundColor: "#FFF0CA" }}
-              ></div>
-              <div className="text-center">10% helping people</div>
-            </div>
-          </div>
-          <div className="flex flex-wrap justify-start w-full ml-5">
-            <div className="flex flex-row items-center">
-              <div
-                className="w-5 h-5 m-3 rounded-md"
-                style={{ backgroundColor: "#F9CF64" }}
-              ></div>
-              <div className="text-center">10% excursions</div>
-            </div>
-            <div className="flex flex-row items-center ml-9">
-              <div
-                className="w-5  h-5 m-3 rounded-md"
-                style={{ backgroundColor: "#F38FBF" }}
-              ></div>
-              <div className="text-center">5% feeding the poor</div>
-            </div>
-          </div>
+    <div className="w-full">
+    <div className="font-roboto w-full">
+      <div className="w-full h-fit bg-gray-200 pb-10">
+        <div className="pt-20 w-[50%] mx-auto mt-auto mb-auto ">
+          <h1 className="text-5xl font-bold pb-10 leading-normal">
+            A day with our wonderful children
+          </h1>
+          <FontAwesomeIcon icon={faLocationDot} className="mr-2" />
+          <span className="mr-10 text-sm">
+            Opp Opolo round about, Yenagoa,Bayelsa,Nigeria
+          </span>
+          <FontAwesomeIcon icon={faCalendar} className="mr-2" />
+          <span className="text-sm">April 13,2022 8:30 AM</span>
         </div>
       </div>
-      <div className="w-full sm:w-1/2 flex justify-center items-center">
-        <img src={chart} width={"300px"} />
+      <div className="w-[50%] mx-auto">
+        <h1 className="text-4xl font-bold pb-10 mt-16">About</h1>
+        <p>
+          Et morbi vitae lobortis nam odio. Faucibus vitae vel neque nullam in
+          in lorem platea mattis. Euismod aenean rhoncus scelerisque amet
+          tincidunt scelerisque aliquam. Luctus porttitor elit vel sapien,
+          accumsan et id ut est. Posuere molestie in turpis quam. Scelerisque in
+          viverra mi ut quisque. In sollicitudin sapien, vel nulla quisque
+          vitae. Scelerisque eget accumsan, non in. Posuere magna erat bibendum
+          amet, nisi eu id.
+        </p>
+        <br />
+        <p>
+          Viverra at diam nunc non ornare. Sed ultricies pulvinar nunc, lacus
+          sem. Tellus aliquam ut euismod cursus dui lectus. Ut amet, cras
+          volutpat dui. A bibendum viverra eu cras.{" "}
+        </p>
+        <p>
+          Mauris morbi sed dignissim a in nec aliquam fringilla et. Mattis elit
+          dignissim nibh sit. Donec arcu sed elit scelerisque tempor ornare
+          tristique. Integer faucibus duis praesent tempor feugiat ornare in.
+          Erat libero egestas porttitor nunc pellentesque mauris et pulvinar
+          eget.
+        </p>
+        <br />
+        <img src={child} alt="child image" style={{ borderRadius: "20px" }} />
+        <br />
+        <p className="pb-32">
+          Et morbi vitae lobortis nam odio. Faucibus vitae vel neque nullam in
+          in lorem platea mattis. Euismod aenean rhoncus scelerisque amet
+          tincidunt scelerisque aliquam. Luctus porttitor elit vel sapien,
+          accumsan et id ut est. Posuere molestie in turpis quam. Scelerisque in
+          viverra mi ut quisque. In sollicitudin sapien, vel nulla quisque
+          vitae. Scelerisque eget accumsan, non in. Posuere magna erat bibendum
+          amet, nisi eu id.
+        </p>
+        <div className="flex">
+          <div>
+            <h1 className="text-4xl font-bold pb-10">
+              Other events
+            </h1>
+          </div>
+          <div>
+            <hr className="w-40 mt-6 ml-6"/>
+          </div>
+        </div>
+        <EventCard
+          date={23}
+          month={"APR"}
+          text={"Say no to plastic usage and save the  planet"}
+        />
+        <EventCard date={30} month={"APR"} text={"Monthly orphanage visits"} />
       </div>
+    </div>
     </div>
   );
 };
 
-export default Chart;
+export default Events;
